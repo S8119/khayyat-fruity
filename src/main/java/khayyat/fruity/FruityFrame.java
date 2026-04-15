@@ -23,8 +23,6 @@ public class FruityFrame extends JFrame
         final JButton searchButton = new JButton("Search");
 
         final JLabel picLabel = new JLabel();
-        picLabel.setBackground(Color.BLUE);
-        picLabel.setOpaque(true);
 
         final JLabel familyLabel = new JLabel("Family");
         final JLabel familyValueLabel = new JLabel(initialFruit.family());

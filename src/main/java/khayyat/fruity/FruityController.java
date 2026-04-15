@@ -66,7 +66,8 @@ public class FruityController
         carbsValueLabel.setText(String.valueOf(nutritions.carbohydrates()));
         proteinValueLabel.setText(String.valueOf(nutritions.protein()));
 
-        try {
+        try
+        {
             ImageIcon imageIcon = new ImageIcon(new URL("https://picsum.photos/800/600"));
             picLabel.setIcon(imageIcon);
         }
