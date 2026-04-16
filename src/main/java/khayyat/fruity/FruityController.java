@@ -70,8 +70,7 @@ public class FruityController
         {
             ImageIcon imageIcon = new ImageIcon(new URL("https://picsum.photos/800/600"));
             picLabel.setIcon(imageIcon);
-        }
-        catch(MalformedURLException e)
+        } catch (MalformedURLException e)
         {
             e.printStackTrace();
         }

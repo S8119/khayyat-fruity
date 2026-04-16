@@ -16,30 +16,29 @@ public class FruityFrame extends JFrame
         setLayout(new GridBagLayout());
 
         final FruityService service = new FruityServiceFactory().create();
-        final Fruit initialFruit = service.getFruit("Strawberry").blockingGet();
-        final Nutritions initialNutritions = initialFruit.nutritions();
 
-        final JTextField searchField = new JTextField(initialFruit.name());
+        final String initialFruitName = "Strawberry";
+        final JTextField searchField = new JTextField(initialFruitName);
         final JButton searchButton = new JButton("Search");
 
         final JLabel picLabel = new JLabel();
 
         final JLabel familyLabel = new JLabel("Family");
-        final JLabel familyValueLabel = new JLabel(initialFruit.family());
+        final JLabel familyValueLabel = new JLabel();
         final JLabel orderLabel = new JLabel("Order");
-        final JLabel orderValueLabel = new JLabel(initialFruit.order());
+        final JLabel orderValueLabel = new JLabel();
         final JLabel genusLabel = new JLabel("Genus");
-        final JLabel genusValueLabel = new JLabel(initialFruit.genus());
+        final JLabel genusValueLabel = new JLabel();
         final JLabel caloriesLabel = new JLabel("Calories");
-        final JLabel caloriesValueLabel = new JLabel(String.valueOf(initialNutritions.calories()));
+        final JLabel caloriesValueLabel = new JLabel();
         final JLabel fatLabel = new JLabel("Fat");
-        final JLabel fatValueLabel = new JLabel(String.valueOf(initialNutritions.fat()));
+        final JLabel fatValueLabel = new JLabel();
         final JLabel sugarLabel = new JLabel("Sugar");
-        final JLabel sugarValueLabel = new JLabel(String.valueOf(initialNutritions.sugar()));
+        final JLabel sugarValueLabel = new JLabel();
         final JLabel carbsLabel = new JLabel("Carbohydrates");
-        final JLabel carbsValueLabel = new JLabel(String.valueOf(initialNutritions.carbohydrates()));
+        final JLabel carbsValueLabel = new JLabel();
         final JLabel proteinLabel = new JLabel("Protein");
-        final JLabel proteinValueLabel = new JLabel(String.valueOf(initialNutritions.protein()));
+        final JLabel proteinValueLabel = new JLabel();
 
         final FruityController controller = new FruityController(
                 service, searchField, picLabel, familyValueLabel, orderValueLabel, genusValueLabel,
@@ -174,7 +173,7 @@ public class FruityFrame extends JFrame
         constraints.anchor = GridBagConstraints.NORTH;
         add(proteinValueLabel, constraints);
 
-        controller.doSearch();
+        controller.doSearch(); //Populate labels with initial values
     }
 
     public static void main(String[] args)
