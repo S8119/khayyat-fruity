@@ -12,3 +12,5 @@ The image generated does not yet match the fruit or respond to changing input; I
 - [FruityVice](https://www.fruityvice.com/)
 - [RxJava](https://reactivex.io/)
 - [Retrofit](https://square.github.io/retrofit/)
+- [JUnit](https://junit.org/)
+- [GridBagLayout](https://docs.oracle.com/javase/8/docs/api/java/awt/GridBagLayout.html)
