@@ -1,11 +1,16 @@
-### Project Name
+### Fruit Information Generator
 
-Add a description
-
+Program to display image of and information about a fruit entered by user.
+The information is accessed through the internet, using the Fruityvice api.
+The image generated does not yet match the fruit or respond to changing input; I am still working on that part.
 ### Screenshots
 
-Put screenshots here
+![GUI displaying image and information for banana](screenshots/Screenshot1.png)
 
 #### Links
 
-- [name](http://url)
+- [FruityVice](https://www.fruityvice.com/)
+- [RxJava](https://reactivex.io/)
+- [Retrofit](https://square.github.io/retrofit/)
+- [JUnit](https://junit.org/)
+- [GridBagLayout](https://docs.oracle.com/javase/8/docs/api/java/awt/GridBagLayout.html)
