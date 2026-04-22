@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class FruityServiceTest
 {
     @Test
-    void getFruit()
+    public void getFruit()
     {
         //given
         FruityService service = new FruityServiceFactory().create();
