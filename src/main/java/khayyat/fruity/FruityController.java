@@ -27,9 +27,9 @@ public class FruityController
     private final JLabel proteinValueLabel;
 
     public FruityController(
-            FruityService fruityService, UnsplashService unsplashService, JTextField searchField, JLabel picLabel, JLabel familyValueLabel,
-            JLabel orderValueLabel, JLabel genusValueLabel, JLabel caloriesValueLabel, JLabel fatValueLabel,
-            JLabel sugarValueLabel, JLabel carbsValueLabel, JLabel proteinValueLabel)
+            FruityService fruityService, UnsplashService unsplashService, JTextField searchField, JLabel picLabel,
+            JLabel familyValueLabel, JLabel orderValueLabel, JLabel genusValueLabel, JLabel caloriesValueLabel,
+            JLabel fatValueLabel, JLabel sugarValueLabel, JLabel carbsValueLabel, JLabel proteinValueLabel)
     {
         this.fruityService = fruityService;
         this.unsplashService = unsplashService;
