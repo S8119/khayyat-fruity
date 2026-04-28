@@ -1,5 +1,8 @@
 package khayyat.fruity;
 
+import khayyat.fruity.unsplash.UnsplashService;
+import khayyat.fruity.unsplash.UnsplashServiceFactory;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -15,7 +18,8 @@ public class FruityFrame extends JFrame
 
         setLayout(new GridBagLayout());
 
-        final FruityService service = new FruityServiceFactory().create();
+        final FruityService fruityService = new FruityServiceFactory().create();
+        final UnsplashService unsplashService = new UnsplashServiceFactory().create();
 
         final String initialFruitName = "Strawberry";
         final JTextField searchField = new JTextField(initialFruitName);
@@ -41,8 +45,9 @@ public class FruityFrame extends JFrame
         final JLabel proteinValueLabel = new JLabel();
 
         final FruityController controller = new FruityController(
-                service, searchField, picLabel, familyValueLabel, orderValueLabel, genusValueLabel,
-                caloriesValueLabel, fatValueLabel, sugarValueLabel, carbsValueLabel, proteinValueLabel);
+                fruityService, unsplashService, searchField, picLabel, familyValueLabel, orderValueLabel,
+                genusValueLabel, caloriesValueLabel, fatValueLabel, sugarValueLabel, carbsValueLabel,
+                proteinValueLabel);
 
         searchButton.addActionListener(new ActionListener()
         {
